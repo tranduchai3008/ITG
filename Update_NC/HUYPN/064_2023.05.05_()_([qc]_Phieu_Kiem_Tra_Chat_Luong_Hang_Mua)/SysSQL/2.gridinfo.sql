@@ -1,0 +1,46 @@
+BEGIN;
+
+DELETE FROM gridinfo WHERE gridid = 'PNDTranQC1' OR gridid = 'Poctpr1' or gridid = 'ctqc';
+
+INSERT INTO gridinfo (gridid,fieldname,fieldposition,fieldcaption,fieldcaption2,visible,style,width,lang,auto,excel_visible,excel_width,dashboard_values_yn,merge_caption) VALUES
+('Poctpr1','ma_vt','1','Mã vt','Mã vt','1','MA','100','','0','1','0.00','0',''),
+('Poctpr1','tag','0','Chọn','Check','1','CHECKBOX','60','','0','1','0.00','0',''),
+('Poctpr1','ten_vt','2','Tên vt','Tên vt','1','','200','','0','1','0.00','0',''),
+('Poctpr1','ma_kho','7','Mã kho','Mã kho','1','MA','80','','0','1','0.00','0',''),
+('Poctpr1','so_luong','8','Số lượng','Số lượng','1','SL','80','','0','1','0.00','0',''),
+('Poctpr1','ma_vv','9','Mã vv','Mã vv','1','MA','80','','0','1','0.00','0',''),
+('Poctpr1','ma_lo','10','Mã lô','Mã lô','1','MA','80','','0','1','0.00','0',''),
+('PNDTranQC1','ten_vt','3','Tên vt','Item name','1','','150','','0','1','0.00','0',''),
+('PNDTranQC1','ma_vt','2','Mã vt','Item id','1','','100','','0','1','0.00','0',''),
+('PNDTranQC1','tag','1','Chọn','Select','1','CHECKBOX','50','','0','1','0.00','0',''),
+('ctqc','ten_vt','4','Tên vt','Tên vt','1','','200','','0','1','0.00','0',''),
+('ctqc','dvt','8','Đvt','Đvt','1','','60','','0','1','0.00','0',''),
+('ctqc','ma_kho','9','Mã kho','Mã kho','1','','80','','0','1','0.00','0',''),
+('ctqc','ma_vv','15','Mã vv','Mã vv','0','','80','','0','1','0.00','0',''),
+('ctqc','ma_loi','16','Mã lỗi','Err ID','0','','80','','0','1','0.00','0',''),
+('ctqc','ok_yn','18','Đạt','Achieve','0','CHECKBOX','40','','0','1','0.00','0',''),
+('ctqc','ghi_chu','19','Ghi chú','Ghi chú','1','','200','','0','1','0.00','0',''),
+('ctqc','so_dh','1','Số đh','Số đh','1','','80','','0','1','0.00','0',''),
+('ctqc','so_luong_qc','10','Số lượng kiểm tra','Số lượng kiểm tra','1','SL','80','','0','1','0.00','0',''),
+('ctqc','ma_vt','3','Mã vt','Mã vt','1','','100','','0','1','0.00','0',''),
+('ctqc','ket_qua_qc','13','Kết luận','Kết luận','1','SL','80','','0','1','0.00','0',''),
+('ctqc','sl_nhap','14','SL cho phép nhập','SL cho phép nhập','1','SL','80','','0','1','0.00','0',''),
+('ctqc','sl_tra','17','SL trả về','SL trả về','1','SL','80','','0','1','0.00','0',''),
+('Poctpr1','dvt','6','Đvt','Đvt','1','MA','60','','0','1','0.00','0',''),
+('Poctpr1','po_khsx','3','PO KHSX','PO KHSX','1','MA','100','','0','1','0.00','0',''),
+('Poctpr1','dau_tuan','4','Dấu tuần','Dấu tuần','1','MA','100','','0','1','0.00','0',''),
+('PNDTranQC1','dvt','6','Đvt','Uom','1','','60','','0','1','0.00','0',''),
+('PNDTranQC1','sl_nhap_qt','7','SL nhập qt','Import quantity','1','SL','100','','0','1','0.00','0',''),
+('PNDTranQC1','sl_xuat_qt','8','SL xuất qt','Export quantity','1','SL','100','','0','1','0.00','0',''),
+('PNDTranQC1','sl_con_lai','9','SL còn lại','Remain quantity','1','SL','100','','0','1','0.00','0',''),
+('PNDTranQC1','so_luong','10','Số lượng','Quantity','1','SL','80','','0','1','0.00','0',''),
+('PNDTranQC1','po_khsx','4','PO KHSX','PO KHSX','1','MA','100','','0','1','0.00','0',''),
+('PNDTranQC1','dau_tuan','5','Dấu tuần','Dấu tuần','1','MA','100','','0','1','0.00','0',''),
+('ctqc','so_luong','11','Số lượng OK','Số lượng OK','1','SL','80','','0','1','0.00','0',''),
+('ctqc','so_luong_hong','12','Số lượng NG','Số lượng NG','1','SL','80','','0','1','0.00','0',''),
+('ctqc','so_ct_pnd','20','Số phiếu nhập GC','Số phiếu nhập GC','1','','100','','0','1','0.00','0',''),
+('ctqc','so_ct_pr1','21','Số phiếu nhập ','Số phiếu nhập ','1','','100','','0','1','0.00','0',''),
+('ctqc','po_khsx','5','PO KHSX','PO KHSX','1','','100','','0','1','0.00','0',''),
+('ctqc','dau_tuan','6','Dấu tuần','Dấu tuần','1','','100','','0','1','0.00','0','');
+
+COMMIT;

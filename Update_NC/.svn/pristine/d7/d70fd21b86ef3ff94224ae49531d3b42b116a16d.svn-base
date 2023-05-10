@@ -1,0 +1,67 @@
+﻿
+
+----------[vouchergridinfo]--------
+
+BEGIN;
+
+DELETE FROM vouchergridinfo WHERE gridid in ('ct94') and vcode ='PO1';
+
+INSERT INTO vouchergridinfo (vcode,gridid,fieldname,fieldposition,fieldcaption,fieldcaption2,carry,visible,editable,style,width,lookupid,lookupfieldname,notempty) VALUES
+('PO1','ct94','app_yn_i','63','Duyệt','Approve','0','1','0','CHECKBOX','50','','','0'),
+('PO1','ct94','ck','20','Ck','Discount','0','1','0','TIEN','100','','','0'),
+('PO1','ct94','ck_nt','18','Ck nt','FC Discount','0','1','0','TIEN_NT','100','','','0'),
+('PO1','ct94','ck_nt2','21','Ck PB2','FC Discount','0','0','1','TIEN_NT','100','','','0'),
+('PO1','ct94','ck_nt3','23','Ck PB3','FC Discount','0','0','1','TIEN_NT','100','','','0'),
+('PO1','ct94','ck_nt4','26','Tiền Ck 4','FC Discount','0','0','0','TIEN','60','','','0'),
+('PO1','ct94','ck_nt5','29','Tiền Ck 5','FC Discount','0','0','0','TIEN','60','','','0'),
+('PO1','ct94','cp','43','Chi phí','Expenses','0','1','1','TIEN','100','','','0'),
+('PO1','ct94','cp_nt','42','Chi phí nt','Expenses FC','0','1','1','TIEN_NT','100','','','0'),
+('PO1','ct94','dau_tuan','4','Dấu tuần','Week','0','1','0','MA','100','','','0'),
+('PO1','ct94','dvt','2','Đvt','Unit','0','1','1','DVT','50','','','0'),
+('PO1','ct94','dvt_ck4','25','Tính Ck4','FC Discount','0','0','0','','100','','','0'),
+('PO1','ct94','dvt_ck5','28','Tính Ck5','FC Discount','0','0','0','','100','','','0'),
+('PO1','ct94','ghi_chu','58','Ghi chú','Description','1','1','0','','100','','','0'),
+('PO1','ct94','gia_cuoi','13','Giá lần cuối','FC Price','0','0','1','GIA','100','','','0'),
+('PO1','ct94','gia_mua_nt','14','Giá (Gồm VAT)','FC Price','0','1','0','GIA_NT','100','','','0'),
+('PO1','ct94','gia_nt','44','Giá vốn','FC Price','0','1','0','GIA','80','','','0'),
+('PO1','ct94','gia_nt0','34','Giá nt','FC Price','0','1','0','GIA_NT','100','','','0'),
+('PO1','ct94','gia0','36','Giá','Price','0','1','0','GIA','100','','','0'),
+('PO1','ct94','loai_vt_xuat','10','Hàng KM','Goods Type','0','1','0','CHECKBOX','50','','','0'),
+('PO1','ct94','ma_ck','16','Mã ck','Discount code','0','1','0','MA','50','dmmack','','0'),
+('PO1','ct94','ma_kh0','54','Nhà sản xuất','Producer','1','0','0','MA','100','','','0'),
+('PO1','ct94','ma_kho','8','Mã kho','Site ID','1','1','0','MA','60','','','0'),
+('PO1','ct94','ma_lo','9','Mã lô','BatchID','0','0','0','MA','60','','','0'),
+('PO1','ct94','ma_thue','30','Mã thuế','Tax code','0','1','0','MA','50','dmthue','','0'),
+('PO1','ct94','ma_thue_nk','38','Mã thuế nk','Import tax code','0','1','0','MA','80','dmthuenk','','0'),
+('PO1','ct94','ma_vt','-1','Mã Vt','Item ID','0','1','0','MA','100','','','1'),
+('PO1','ct94','ma_vv','51','Mã Vv','JobID','1','0','0','MA','100','dmvv','','0'),
+('PO1','ct94','mss','6','MSS','MSS','0','1','1','','200','','','0'),
+('PO1','ct94','muc_dich_sd','59','Mục đích sử dụng','Description','1','0','0','','100','','','0'),
+('PO1','ct94','ngay_ct','53','Ngày ct (đặt hàng)','Voucher date','1','0','0','DATE','100','','','1'),
+('PO1','ct94','ngay_nh','9','Ngày yêu cầu nhận hàng','Expected Receipt Date','1','1','0','DATE','100','','','8'),
+('PO1','ct94','nk','41','Thuế nk','Import Tax','0','1','0','TIEN','100','','','0'),
+('PO1','ct94','nk_nt','40','Thuế nk nt','Import FC Tax','0','1','0','TIEN_NT','100','','','0'),
+('PO1','ct94','po_khsx','3','PO KHSX','PO KHSX','0','1','1','SO_CT','120','','','0'),
+('PO1','ct94','pt_ck','17','%Ck','%Discount','0','1','1','HE_SO','50','','','0'),
+('PO1','ct94','pt_ck2','19','%Ck2','FC Discount','0','0','1','HE_SO','50','','','0'),
+('PO1','ct94','pt_ck3','22','%Ck3','FC Discount','0','0','1','HE_SO','50','','','0'),
+('PO1','ct94','pt_ck4','24','%Ck 4','FC Discount','0','0','0','HE_SO','60','','','0'),
+('PO1','ct94','pt_ck5','27','%Ck 5','FC Discount','0','0','0','HE_SO','60','','','0'),
+('PO1','ct94','qc_yn','5','QC','Goods Type','0','1','1','CHECKBOX','50','','','0'),
+('PO1','ct94','sl_duyet','62','SL Duyệt','Q.ty App','0','1','1','SL','80','','','0'),
+('PO1','ct94','so_ct_pr0','64','Số phiếu YC','Approve','0','1','1','','100','','','0'),
+('PO1','ct94','so_luong','11','Số lượng','Quantity','0','1','0','SL','80','','','0'),
+('PO1','ct94','ten_vt','0','Tên vật tư','Item Name','0','1','1','TEN','200','','','0'),
+('PO1','ct94','ten_vt2','1','Tên hàng NCC','Item supliers','0','0','0','TEN','200','','','0'),
+('PO1','ct94','thue','33','Thuế','Tax','0','1','0','TIEN','100','','','0'),
+('PO1','ct94','thue_nt','32','Thuế nt','FC Tax','0','1','0','TIEN_NT','100','','','0'),
+('PO1','ct94','thue_suat','31','%Ts','%Tax Rate','0','1','1','HE_SO','50','','','0'),
+('PO1','ct94','thue_suat_nk','39','% Ts NK','%Input Tax','0','1','1','HE_SO','80','','','0'),
+('PO1','ct94','tien_mua_nt','15','Tiền (Gồm VAT)','FC Amount','0','1','1','TIEN_NT','100','','','0'),
+('PO1','ct94','tien_nt','45','Tiền vốn','FC Amount','0','1','1','TIEN_NT','100','','','0'),
+('PO1','ct94','tien_nt0','35','Tiền nt','FC Amount','0','1','1','TIEN_NT','100','','','0'),
+('PO1','ct94','tien0','37','Tiền','Amount','0','1','0','TIEN','100','','','0'),
+('PO1','ct94','weight','12','Số KG','Quantity','0','1','1','SL','80','','','0'),
+('PO1','ct94','xcolor','7','Màu/ pantone','Color','0','1','1','','80','','','0');
+
+COMMIT;

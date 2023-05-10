@@ -1,0 +1,47 @@
+﻿-- Type: public.poctpo1close_return
+
+ DROP TYPE public.poctpo1close_return cascade;
+
+CREATE TYPE public.poctpo1close_return AS
+   (app_yn_i smallint,
+    stt smallint,
+    ma_dvcs character varying,
+    stt_rec public.ud_stt_rec,
+    ma_ct public.ud_ma_ct,
+    ngay_ct public.ud_ngay,
+    so_ct public.ud_so_ct,
+    ma_kh character varying,
+    ten_kh character varying,
+    ten_kh2 character varying,
+    ma_bp public.ud_ma,
+    ma_vt character varying,
+    ten_vt character varying,
+    dvt public.ud_dvt,
+    so_luong public.ud_float,
+    sl_duyet public.ud_float,
+    gia public.ud_float,
+    gia_nt public.ud_float,
+    tien public.ud_float,
+    tien_nt public.ud_float,
+    thue public.ud_float,
+    thue_nt public.ud_float,
+    ck public.ud_float,
+    ck_nt public.ud_float,
+    so_luong_01 public.ud_float,
+    chenh_lech_01 public.ud_float,
+    stt_rec_01 character varying,
+    so_ct_01 character varying,
+    ngay_ct_01 public.ud_ngay,
+    so_luong_12 public.ud_float,
+    chenh_lech_12 public.ud_float,
+    stt_rec_12 character varying,
+    so_ct_12 character varying,
+    ngay_ct_12 public.ud_ngay,
+    gc_ud1 public.ud_char20,
+    status public.ud_status,
+    ln public.ud_smallint,
+    ly_do_dong character varying,
+    po_khsx character varying,
+    dau_tuan character varying);
+ALTER TYPE public.poctpo1close_return
+  OWNER TO postgres;

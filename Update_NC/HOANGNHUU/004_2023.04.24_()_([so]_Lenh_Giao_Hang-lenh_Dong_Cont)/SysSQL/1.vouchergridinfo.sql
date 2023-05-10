@@ -1,0 +1,65 @@
+﻿
+
+----------[vouchergridinfo]--------
+
+BEGIN;
+
+DELETE FROM vouchergridinfo WHERE gridid in ('ct96','ctcont') and vcode ='TO2';
+
+INSERT INTO vouchergridinfo (vcode,gridid,fieldname,fieldposition,fieldcaption,fieldcaption2,carry,visible,editable,style,width,lookupid,lookupfieldname,notempty) VALUES
+('TO2','ct96','dong_yn','19','Đóng','Close','0','1','1','CHECKBOX','50','','','0'),
+('TO2','ct96','dvt','11','Đvt','Unit','0','1','0','DVT','50','','','1'),
+('TO2','ct96','gia','26','Giá','Price','0','0','0','GIA','100','','','0'),
+('TO2','ct96','gia_nt','9','Giá nt','FC Price','0','0','0','GIA_NT','100','','','0'),
+('TO2','ct96','giao_ho','11','Chuyển giao hộ','Type','0','0','0','CHECKBOX','40','','','0'),
+('TO2','ct96','loai_vt_xuat','7','Hàng KM','Type','0','0','0','CHECKBOX','60','','','0'),
+('TO2','ct96','ma_dvcs2','12','Đơn vị GH','Transport Emp','0','0','0','MA','70','','','0'),
+('TO2','ct96','ma_kho','9','Mã kho','Stock','0','1','0','MA','80','','','0'),
+('TO2','ct96','ma_noi_nhan','6','Địa điểm giao','Địa điểm giao','0','1','0','MA','100','','','1'),
+('TO2','ct96','ma_nvdv','21','Mã NvLĐ','Service Emp','0','0','0','MA','70','','','0'),
+('TO2','ct96','ma_nvvc','20','Mã NvVc','Transport Emp','0','0','0','MA','70','','','0'),
+('TO2','ct96','ma_nx','23','Mã Nx (Tk nợ)','Dr account','0','0','0','MA_TK','100','dmnx','','1'),
+('TO2','ct96','ma_vt','3','Mã hàng','Item ID','0','1','0','MA','100','','','1'),
+('TO2','ct96','ma_vv','28','Mã Vv','JobID','0','0','0','MA','100','','','0'),
+('TO2','ct96','ngay_gh','14','Ngày giao hàng','Ngày giao hàng','0','1','0','DATE','100','','','0'),
+('TO2','ct96','ngay_nh','24','Ngày nhận hàng','Receipt date','0','0','0','DATE','100','','','0'),
+('TO2','ct96','sl_kien','45','Số kiện','Số kiện','0','0','1','SL','80','','','0'),
+('TO2','ct96','sl_luot','46','Số lượt','Số lượt','0','0','1','SL','80','','','0'),
+('TO2','ct96','sl_pallet','13','Số pallet','Số pallet','0','1','1','SL','80','','','0'),
+('TO2','ct96','so_dh','2','Số ĐH','Voucher order','0','1','1','','100','','','0'),
+('TO2','ct96','so_do','33','Số DO','No DO','0','0','0','','100','','','0'),
+('TO2','ct96','so_ecis','7','Số Ecis','Số Ecis','0','1','0','TEN','100','','','1'),
+('TO2','ct96','so_luong','12','Số lượng','Quantity','0','1','0','SL','80','','','0'),
+('TO2','ct96','so_luong_da_chuyen','29','SL đã chuyển','Qty Shipped','0','0','1','SL','100','','','0'),
+('TO2','ct96','so_luong_da_nhan','30','SL đã nhận','Qty Receipted','0','0','1','SL','100','','','0'),
+('TO2','ct96','so_po','1','Số PO','No PO','0','1','0','','100','','','0'),
+('TO2','ct96','so_top','8','Số TOP','TOP no','0','1','0','','100','','','0'),
+('TO2','ct96','ten_vt','4','Tên hàng','Item Name','0','1','1','TEN','200','','','0'),
+('TO2','ct96','ten_vt2','5','Tên hàng 2','Item Name 2','0','1','1','TEN','200','','','0'),
+('TO2','ct96','tien','27','Tiền','Amount','0','0','0','TIEN','100','','','0'),
+('TO2','ct96','tien_nt','10','Tiền nt','FC Price','0','0','0','TIEN_NT','100','','','0'),
+('TO2','ct96','tk_vt','25','Tk có','Cr Account','0','0','0','MA_TK','100','dmnx','','1'),
+('TO2','ct96','ton13','10','Tồn kho','Balance','0','1','0','SL','80','','','0'),
+('TO2','ct96','volume','15','M3','M3 Gross','0','1','1','SL','80','','','0'),
+('TO2','ct96','volume_net','16','M3 net','M3 Net','0','1','1','SL','80','','','0'),
+('TO2','ct96','weight','17','Trọng lượng Gross','Trọng lượng Gross','0','1','1','SL','80','','','0'),
+('TO2','ct96','weight_net','18','Trọng lượng Net','Trọng lượng Net','0','1','1','SL','80','','','0'),
+('TO2','ct96','xac_nhan_gh','22','Xác nhận GH','Check','0','0','0','CHECKBOX','80','','','0'),
+('TO2','ctcont','dong_yn','14','Đóng','Đóng','0','1','0','CHECKBOX','50','','','0'),
+('TO2','ctcont','ghi_chu','13','Ghi chú','Ghi chú','0','1','0','','200','','','0'),
+('TO2','ctcont','loai_cont','3','Loại Cont','Loại Cont','0','1','1','','100','','','0'),
+('TO2','ctcont','loai_noi_nhan','2','Loại nơi đến','Loại nơi đến','0','1','1','MA','100','','','0'),
+('TO2','ctcont','ma_cang','5','Cảng đi','Cảng đi','0','1','0','MA','80','dmcang','','0'),
+('TO2','ctcont','ma_noi_nhan','-1','Nơi đến','Nơi đến','0','1','1','MA','100','dmnoinhan','','0'),
+('TO2','ctcont','ngay_dong_cont','4','Ngày đóng cont','Ngày đóng cont','0','1','1','DATE','80','','','0'),
+('TO2','ctcont','so_ecis','0','Số Ecis','Số Ecis','0','1','1','','80','','','0'),
+('TO2','ctcont','t_sl_luot','5','Số lượt','Số lượt','0','0','1','SL','80','','','0'),
+('TO2','ctcont','t_so_luong','1','Tổng số lượng','Tổng số lượng','0','1','1','SL','80','','','0'),
+('TO2','ctcont','t_tien','8','Tổng tiền','Tổng tiền','0','0','1','TIEN','100','','','0'),
+('TO2','ctcont','t_tien_nt','7','Tổng tiền','Tổng tiền','0','0','1','TIEN','100','','','0'),
+('TO2','ctcont','t_volume','6','M3 Gross','M3 Gross','0','1','1','SL','80','','','0'),
+('TO2','ctcont','t_volume_net','7','M3 Net','M3 Net','0','1','1','SL','80','','','0'),
+('TO2','ctcont','t_weight','8','Trọng lượng Gross','Trọng lượng Gross','0','1','1','SL','80','','','0'),
+('TO2','ctcont','t_weight_net','9','Trọng lượng Net','Trọng lượng Net','0','1','1','SL','80','','','0');
+
+COMMIT;

@@ -1,0 +1,45 @@
+BEGIN;
+
+DELETE FROM vouchergridinfo WHERE gridid in ('ct74') and vcode ='PND';
+
+INSERT INTO vouchergridinfo (vcode,gridid,fieldname,fieldposition,fieldcaption,fieldcaption2,carry,visible,editable,style,width,lookupid,lookupfieldname,notempty) VALUES
+('PND','ct74','dau_tuan','4','Dấu tuần','BatchID','0','1','0','MA','80','','','0'),
+('PND','ct74','dvt','5','Đvt','Unit','0','1','0','DVT','50','','','1'),
+('PND','ct74','gia','23','Giá','Price','0','1','0','GIA','100','','','0'),
+('PND','ct74','gia_nt','14','Giá nt','FC Price','0','1','0','GIA_NT','100','','','0'),
+('PND','ct74','ma_bp','22','Mã BP','Dept ID','1','1','0','MA','80','dmbp','','0'),
+('PND','ct74','ma_cd_gt','20','Công đoạn tính giá','Pricing stage','0','1','0','MA','80','dmcdgt','','0'),
+('PND','ct74','ma_cp','21','Mã phí','Fee ID','1','1','0','MA','80','dmcp','','0'),
+('PND','ct74','ma_dvcs_i','0','Mã đvcs','Unit','1','0','0','MA','80','dmdvcs','','0'),
+('PND','ct74','ma_kho','6','Mã kho','Site ID','1','1','0','MA','80','dmkho','','1'),
+('PND','ct74','ma_kieu','0','Mã kiểu hạ khổ','Number of processed orders NVL','0','0','1','','100','','','0'),
+('PND','ct74','ma_nx','17','Mã nx (Tk có)','Cr Account','1','1','0','MA_TK','100','dmnx','','1'),
+('PND','ct74','ma_thao_tac','7','Mã công đoạn SX','SX stage Code','0','1','0','MA','80','mfdmthaotac','','0'),
+('PND','ct74','ma_version','0','Version','Version','0','0','1','MA','60','','','0'),
+('PND','ct74','ma_vt','1','Mã vật tư','Item ID','0','1','0','MA','100','dmvt','ten_vt','1'),
+('PND','ct74','ma_vv','18','Mã Vv','JobID','0','1','0','MA','80','','','0'),
+('PND','ct74','pn_gia_tb','13','Giá TB','Average','0','1','0','CHECKBOX','50','','','0'),
+('PND','ct74','po_khsx','3','PO KHSX','PO KHSX','0','1','1','MA','120','','','0'),
+('PND','ct74','sl_kg','10','Số lượng KG','KG quantity','0','1','0','SL','100','','','0'),
+('PND','ct74','sl_pallet','9','Số lượng Pallet','Pallet quantity','0','1','0','SL','100','','','0'),
+('PND','ct74','sl_sp','0','Part xén','Part xén','0','0','1','SL','100','','','0'),
+('PND','ct74','sl_thung','11','Số lượng bao, thùng','Box quantity','0','1','0','SL','100','','','0'),
+('PND','ct74','so_ct_dxv','29','Số phiếu NVL','Number of processed orders NVL','0','1','1','','100','','','0'),
+('PND','ct74','so_ct_lhk','0','Lệnh hạ khổ','Number of processed orders NVL','0','0','1','','100','','','0'),
+('PND','ct74','so_ct_nl1','0','Số phiếu yêu cầu nhập lề','The margin of the vote required to enter','0','0','1','','150','','','0'),
+('PND','ct74','so_ct_pd1','26','Số lệnh SX','MF Command','0','1','1','','80','','','0'),
+('PND','ct74','so_ct_pd12','27','Số lệnh SX gia công','Number of processed orders SX','0','1','1','','150','','','0'),
+('PND','ct74','so_ct_po1','0','Số ĐH vay','Number of processed orders SX','0','0','1','','100','','','0'),
+('PND','ct74','so_ct_pxa','28','Số phiếu xuất kho','Number of processed orders SX','0','1','1','','100','','','0'),
+('PND','ct74','so_ct_qc1','0','Số phiếu QC gia công','QC votes outsourcing','0','0','1','','150','','','0'),
+('PND','ct74','so_ct_qc2','0','Số phiếu QC','MF QC','0','0','1','','80','','','0'),
+('PND','ct74','so_ct_tk1','25','Số phiếu TK','MF Statistical','0','1','1','','80','','','0'),
+('PND','ct74','so_luong','8','Số lượng','Quantity','0','1','0','SL','100','','','0'),
+('PND','ct74','so_luong1','0','Số lượng (Đvt2)','Quantity (To)','0','0','0','SL','80','','','0'),
+('PND','ct74','ten_vt','2','Tên vật tư','Item Name','0','1','1','TEN','200','','','0'),
+('PND','ct74','ten_vv','19','Tên VV','Job name','0','1','1','','200','','','0'),
+('PND','ct74','tien','24','Tiền','Amount','0','1','0','TIEN','100','','','0'),
+('PND','ct74','tien_nt','15','Tiền nt','FC Amount','0','1','0','TIEN_NT','100','','','0'),
+('PND','ct74','tk_vt','16','Tk vt(Tk nợ)','Dr account','0','1','0','MA_TK','100','dmnx','','1');
+
+COMMIT;

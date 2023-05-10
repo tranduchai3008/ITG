@@ -1,0 +1,48 @@
+BEGIN;
+
+DELETE FROM vouchergridinfo WHERE gridid in ('ctdxnvl') and vcode ='DXV';
+
+INSERT INTO vouchergridinfo (vcode,gridid,fieldname,fieldposition,fieldcaption,fieldcaption2,carry,visible,editable,style,width,lookupid,lookupfieldname,notempty) VALUES
+('DXV','ctdxnvl','app_yn_i','29','Duyệt','Browse','0','1','1','CHECKBOX','80','','','0'),
+('DXV','ctdxnvl','bien_phap_xu_ly','20','Biện pháp xử lý','Treatment measures','1','1','0','','200','','','0'),
+('DXV','ctdxnvl','dau_tuan','4','Dấu tuần','Week','0','1','0','MA','120','','','0'),
+('DXV','ctdxnvl','dien_giai','28','Ghi chú','Note','0','1','0','','200','','','0'),
+('DXV','ctdxnvl','dvt','6','ĐVT','ĐVT','0','1','0','','80','','','0'),
+('DXV','ctdxnvl','ghi_chu','26','Mục đích sử dụng','Uses','0','1','0','','200','','','0'),
+('DXV','ctdxnvl','ma_kho','7','Mã kho','Store code','0','1','0','MA','100','','','0'),
+('DXV','ctdxnvl','ma_sp','17','Mã mẹ','mother code','0','1','0','MA','100','','','0'),
+('DXV','ctdxnvl','ma_thao_tac','8','Mã công đoạn SX ','SX stage Code','0','1','0','MA','100','','','0'),
+('DXV','ctdxnvl','ma_version','5','Mã Version','Version code','0','1','1','MA','180','','','0'),
+('DXV','ctdxnvl','ma_vt','1','Mã vật tư','Material code','0','1','0','MA','180','','','0'),
+('DXV','ctdxnvl','ma_vt1','29','Mã vật tư chuẩn','Material code','0','0','1','MA','100','','','0'),
+('DXV','ctdxnvl','ma_vv','22','Mã v/v','Code case','0','1','0','MA','100','','','0'),
+('DXV','ctdxnvl','ngay_bd','18','Ngày bắt đầu','Start day','1','1','0','DATE','100','','','0'),
+('DXV','ctdxnvl','ngay_kt','19','Ngày kết thúc','Completion date','1','1','0','DATE','100','','','0'),
+('DXV','ctdxnvl','ngay_nhan_hang','15','Ngày khách lấy hàng','Day visitors pickup','1','1','0','DATE','100','','','0'),
+('DXV','ctdxnvl','ngay_tra_hang','16','Ngày khách phải trả hàng','Day visitors pay row','1','1','0','DATE','100','','','0'),
+('DXV','ctdxnvl','ngay_xuat_kho','14','Ngày xuất','Publication date','1','1','0','DATE','100','','','0'),
+('DXV','ctdxnvl','po_khsx','3','PO KHSX','PO KHSX','0','1','1','SO_CT','120','','','0'),
+('DXV','ctdxnvl','quy_cach','21','Quy cách','specification','0','1','0','','150','','','0'),
+('DXV','ctdxnvl','sl_kg','12','Số lượng KG','Number','0','1','0','SL','100','','','0'),
+('DXV','ctdxnvl','sl_pd1_0','8','SL trên lệnh SX','Number','0','0','1','SL','100','','','0'),
+('DXV','ctdxnvl','sl_pd1_con_lai','9','Số lượng cần yêu cầu','Number','0','0','1','SL','120','','','0'),
+('DXV','ctdxnvl','sl_thung','13','Số lượng thùng','Number','0','1','0','SL','100','','','0'),
+('DXV','ctdxnvl','sl_ton_px','10','Số lượng tồn PX','Number','0','0','1','SL','120','','','0'),
+('DXV','ctdxnvl','sl_ton_px_lk','11','Số lượng tồn PX còn lại','Number','0','0','1','SL','150','','','0'),
+('DXV','ctdxnvl','sl_xuat_kho','12','Số lượng còn lại','Number','0','0','1','SL','100','','','0'),
+('DXV','ctdxnvl','so_ct_pd1','23','Số LSX','number LSX','0','0','1','','100','','','0'),
+('DXV','ctdxnvl','so_ct_pd1b','24','Số LSX vượt','number LSX','0','0','1','','100','','','0'),
+('DXV','ctdxnvl','so_ct_pnd','32','Số phiếu nhập kho','Number of bills','0','1','1','','100','','','0'),
+('DXV','ctdxnvl','so_ct_pxa','31','Số phiếu xuất kho','Number of bills','0','1','1','','100','','','0'),
+('DXV','ctdxnvl','so_ct_pxb','34','Phiếu xuất điều chuyển','Change delivery votes','0','1','1','SO_CT','100','','','0'),
+('DXV','ctdxnvl','so_ct_rew','30','Số phiếu Rework','number Rework','0','1','1','','100','','','0'),
+('DXV','ctdxnvl','so_luong','11','Số lượng yêu cầu','Number','0','1','0','SL','100','','','0'),
+('DXV','ctdxnvl','so_luong_pd1','25','Số lượng SX','Number SX','0','0','1','SL','100','','','0'),
+('DXV','ctdxnvl','so_luong_rew','10','SL trên Rework','Number','0','1','1','SL','100','','','0'),
+('DXV','ctdxnvl','ten_loi','27','Tên lỗi','Uses','0','1','0','','150','','','0'),
+('DXV','ctdxnvl','ten_vt','2','Tên vật tư','Name supplies','0','1','1','','200','','','0'),
+('DXV','ctdxnvl','ten_vt1','30','Tên vật tư chuẩn','Name supplies','0','0','1','','200','','','0'),
+('DXV','ctdxnvl','ten_vv','23','Tên v/v','Code case','0','1','1','','150','','','0'),
+('DXV','ctdxnvl','ton13','9','SL tồn','Inventory number','0','1','1','SL','100','','','0');
+
+COMMIT;
